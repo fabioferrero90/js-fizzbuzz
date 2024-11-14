@@ -14,13 +14,13 @@ for( let i=1 ; i<=100; i++ ){
   //Da questo momento ogni esecuzione di questo codice avverrà con un valore "i" progressivo da 1 a 100
 
   //Controllo che il numero sia divisibile per 5 e per 3 altrimenti vado avanti
-  if (!(i % 3) && !(i % 5)) {
+  if ((i % 3) === 0 && (i % 5) === 0) {
     console.log("FizzBuzz")
     //Controllo che il numero sia divisibile per 3
-  } else if (!(i % 3)){
+  } else if ((i % 3) === 0){
     console.log("Fizz")
     //Controllo che il numero sia divisibile per 5
-  } else if (!(i % 5)){
+  } else if ((i % 5) === 0){
     console.log("Buzz")
     //Altrimenti stampo il numero
   } else {
